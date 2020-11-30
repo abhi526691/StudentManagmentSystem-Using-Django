@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<style>
+    .th{
+  font-weight: bold;
+}
+</style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Details</title>
+    <h1 style="margin-left:30%;">Student Details</h1>
+</head>
+<body>
+    <table style="margin-left:20%;">
+        <tr>
+          <th scope="col">Name</th>
+          <th scope="col">Age</th>
+          <th scope="col">RollNo</th>
+          <th scope="col">ClassNo</th>
+          <th scope="col">Father Name</th>
+          <th scope="col">Father Number</th>
+        </tr>
+            {% for f in form %}
+            <tr>
+                <td>{{f.name}}</td>
+                <td>{{f.age}}</td>
+                <td>{{f.rollNo}}</td>
+                <td>{{f.classNo}}</td>
+                <td>{{f.FatherName}}</td>
+                <td>{{f.FatherNumber}}</td>
+                </tr>
+                <br>
+            {% endfor %}
+      </table>
+</body>
+</html>
